@@ -42,21 +42,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define video sources for each icon
     const videoSources = {
-        '2048.png': 'videos/2048.mp4',
-        'BYV.png': 'videos/22.mp4',
-        'DBS.png': 'videos/dbs.mp4',
-        'SJ.png': 'videos/SJ1.mp4',
-        'PC.png': 'videos/PC.mp4',
-        'LBC.png': 'videos/lb1.mp4',
-        'LINEUP.png': 'videos/lineup.mp4',
-        'LOOPER.png': 'videos/LP.mp4',
-        'LS.png': 'videos/LS.mp4',
-        'GT.png': 'videos/GT.mp4',
-        'TF.png': 'videos/TF.mp4',
-        'drawit.png': 'videos/DRAWIT.mp4',
-        'CANDY.png': 'videos/CANDY.mp4',
-        'SJ2.png': 'videos/SJ2.mp4',
-        'PC2.png': 'videos/PCCUS.mp4',
+        '2048.png': '2048.mp4',
+        'BYV.png': '22.mp4',
+        'DBS.png': 'dbs.mp4',
+        'SJ.png': 'SJ1.mp4',
+        'PC.png': 'PC.mp4',
+        'LBC.png': 'lb1.mp4',
+        'LINEUP.png': 'lineup.mp4',
+        'LOOPER.png': 'LP.mp4',
+        'LS.png': 'LS.mp4',
+        'GT.png': 'GT.mp4',
+        'TF.png': 'TF.mp4',
+        'drawit.png': 'DRAWIT.mp4',
+        'CANDY.png': 'CANDY.mp4',
+        'SJ2.png': 'SJ2.mp4',
+        'PC2.png': 'PCCUS.mp4',
     };
 
     // When an icon is clicked
