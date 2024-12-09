@@ -95,6 +95,8 @@ window.addEventListener('load', function() {
     const progressBar = document.getElementById('progress-bar');
     const loadingContainer = document.getElementById('loading-container');
     const loadingText = document.getElementById('loading-text');
+    const video = document.getElementById("hero-video");
+
 
     let progress = 0;
     const interval = setInterval(() => {
@@ -105,7 +107,10 @@ window.addEventListener('load', function() {
             clearInterval(interval);
             loadingText.textContent = 'Loaded!';
             setTimeout(() => {
+                video.currentTime = 0;
+                video.play();
                 loadingContainer.style.display = 'none'; // Hide loading container after loading is complete
+
             }, 1000);
         }
     }, 100); // Update progress every 100ms
