@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sinduja">
-    <title>Sinduja Rajadurai</title>
+    <title>Sid-port</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loading Bar -->
+<div id="loading-container">
+    <div id="loading-bar">
+        <div id="progress-bar"></div>
+    </div>
+    <div>
+    <p id="loading-text" style=" text-align: center;">Loading...</p>
+</div>
+</div>
+
     <header>
         <nav>
             <div class="logo">Sinduja Rajadurai</div>
@@ -22,10 +32,13 @@
 
     <section id="home" class="hero">
         <div class="video-container">
-            <video autoplay loop playsinline>
-                <source src="landscape.mp4" type="video/mp4">
+            <video id="hero-video" autoplay muted playsinline loop>
+                <source src="landscape.mp4" type="video/mp4" >
             </video>
         </div>
+        <button id="unmute-button">
+            <img src="audio.png"  class="audioicon"  style="margin-top: -25px; margin-left: -30px;" >
+         </button>
     </section>
 
     <section id="about" class="about">
@@ -33,7 +46,7 @@
             <div class="content">
                 <h2>About Me</h2>
                 <p>
-                    Hi! Im Sinduja a Game Programmer with an extensive experience in developing engaging and interactive games
+                    Hi! Im Sinduja Rajadurai a Game Programmer with an extensive experience in developing engaging and interactive games
                     using technologies like Cocos Creator, Unity, and HTML5 game frameworks. In addition to my technical expertise, I have a
                     strong background in team leadership and mentoring junior developers, fostering collaboration and growth within teams.
                 </p>
@@ -201,11 +214,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <footer>
-        <p>&copy; 2024 Sinduja Rajadurai. All rights reserved.</p>
-    </footer> -->
-
     <script src="script.js"></script>
 </body>
 </html>

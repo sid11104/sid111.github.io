@@ -17,7 +17,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("hero-video");
+    const unmuteButton = document.getElementById("unmute-button");
+
+    // Unmute video when the button is clicked
+    unmuteButton.addEventListener("click", () => {
+        if (video.muted) {
+            video.muted = false;
+            unmuteButton.style.opacity = 0;
+            video.play(); // Ensure video continues playing with audio
+            console.log("Audio enabled");
+        }
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
+  
     const icons = document.querySelectorAll('.icon');
     const iphoneVideo = document.getElementById('iphone-video');
     const iconGrid = document.getElementById('icon-grid');
@@ -73,3 +90,24 @@ document.addEventListener('DOMContentLoaded', () => {
         iconGrid.classList.remove('hidden');
     });
 });
+
+window.addEventListener('load', function() {
+    const progressBar = document.getElementById('progress-bar');
+    const loadingContainer = document.getElementById('loading-container');
+    const loadingText = document.getElementById('loading-text');
+
+    let progress = 0;
+    const interval = setInterval(() => {
+        progress += 2; // Increase by 2 percent each time
+        progressBar.style.width = progress + '%';
+        
+        if (progress >= 100) {
+            clearInterval(interval);
+            loadingText.textContent = 'Loaded!';
+            setTimeout(() => {
+                loadingContainer.style.display = 'none'; // Hide loading container after loading is complete
+            }, 1000);
+        }
+    }, 100); // Update progress every 100ms
+});
+
