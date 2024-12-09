@@ -1,0 +1,414 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #333;
+    /* background-image: url('bg.png');     */
+    background-repeat: repeat; 
+    background-size: auto; 
+    background-position: top left; /* Align pattern at the top-left */
+    margin: 0; /* Remove default body margin */
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: -50px; /* Remove any top margin from the header */
+
+}
+
+p {
+    text-align: left; /* Center align the text */
+    margin: 0 auto;     /* Center the paragraph block */
+    max-width: 1000px;   /* Set a consistent width for all paragraphs */
+    line-height: 1.2;
+    font-size: 1.2rem;
+    margin-left: 0; 
+    margin-bottom: 20px;  
+    margin-top: -5px;
+}
+
+.iphone {
+    width: 300px;
+    height: 600px;
+    margin: 20px auto;
+    border: 10px solid #333;
+    border-radius: 20px;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    /* background: white; */
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.linkIcon:hover {
+    background: lightgray; 
+}
+
+.linkIcon {
+    width: 80px;
+    height: 80px;
+    background: white;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+#iphone-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: white;
+}
+
+#home-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Fullscreen Hero Video */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 0; /* Ensure no margin below the hero section */
+    padding-bottom: 0; /* Remove padding below hero if any */
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-bottom: 0; /* Ensure no margin at the top of the about section */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about {
+    background-color: #416e9e; /* Blue background color */
+    color: white; /* Optional: Ensure the text is readable */
+    padding: 60px 20px; /* Retain the padding for proper spacing */
+    text-align: center; /* Retain the text alignment */
+    margin-top: 0; /* Ensure no margin at the top of the about section */
+    margin: 0; /* Remove top margin from about */
+}
+
+.publications {
+    background-color: #416e9e; /* Blue background color */
+    color: white; /* Optional: Ensure the text is readable */
+    padding: 60px 20px; /* Retain the padding for proper spacing */
+    text-align: center; /* Retain the text alignment */
+    margin-top: 0; /* Ensure no margin at the top of the about section */
+    margin: 0; /* Remove top margin from about */
+}
+
+/* Adjust spacing between sections */
+#about, #projects, #publications {
+    margin: 0 0;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between; /* Space between content and icons */
+    align-items: center; /* Vertically align items */
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    max-width: 1200px; /* Limit the width for a neat layout */
+    margin: 0 auto; /* Center the section */
+    padding: -10px;
+    text-align:  center;
+    flex-direction: column; /* Arrange content vertically */
+}
+
+.about-container .content {
+    flex: 1; /* Take up available space */
+    margin-right: 20px; /* Add spacing between content and icons */
+    text-align: center; /* Center-align the text */
+
+}
+
+h3{
+    text-align: left; 
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+
+}
+
+h4 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: white;
+    margin-top: -50px; /* Remove any top margin from the header */
+    background-color: black;
+    background-size:cover;
+    width: 100vw; /* Set width to the full viewport width */
+    margin-left:  -155px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+}
+
+.icons .icon {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.icons img {
+    max-width: 100%; /* Ensure the icons fit */
+    max-height: 100%; /* Keep aspect ratio */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex; /* Makes the list items display in a row */
+    gap: 20px; /* Space between each link */
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline; /* Ensures each list item is treated as a block-level element */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+    font-size: 1.1rem; /* Adjust font size if needed */
+    padding: 10px 15px; /* Add padding for clickable areas */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect for links */
+}
+
+.games {
+    padding: 20px;
+    text-align: center;
+}
+
+.landscape-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between items */
+    margin-bottom: 60px;
+    margin-top:  80px;
+    margin-left:  200px;
+
+}
+
+.portrait-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 150px; /* Space between items */
+    margin-bottom: 50px;
+    margin-left:  260px;
+}
+
+.game-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between GIF and text */
+    flex: 1 1 calc(33.33% - 20px); /* Adjust width for responsiveness */
+}
+
+.game-gif {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.landscape {
+    width: 300px; /* Adjust as needed for landscape GIFs */
+    height: auto;
+}
+
+.portrait {
+    width: 150px; /* Adjust as needed for portrait GIFs */
+    height: auto;
+}
+
+.game-info {
+    text-align: left;
+}
+
+.game-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.game-info p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+}
+.games {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.landscape-gif {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.portrait-gif {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background-color: #820b15;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.game {
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center; /* Center-aligns text inside the `.game` container */
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the title and the GIF horizontally */
+}
+
+.gameTitle {
+    margin-top: 0.5rem; /* Adds space between the GIF and the title */
+    color: white; /* Adjust the color to suit your theme */
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center; /* Ensure the title text itself is centered */
+
+}
+
+
+h6 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: white;
+    margin-top: -60px; 
+    background-color: black;
+    background-size:cover;
+    width: 100vw; /* Set width to the full viewport width */
+    margin-left: -20px; 
+}
+
