@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'LS.png': 'videos/LS.mp4',
         'GT.png': 'videos/GT.mp4',
         'TF.png': 'videos/TF.mp4',
-        'drawit.png': 'videos/drawit.mp4',
+        'drawit.png': 'videos/DRAWIT.mp4',
         'CANDY.png': 'videos/CANDY.mp4',
         'SJ2.png': 'videos/SJ2.mp4',
         'PC2.png': 'videos/PCCUS.mp4',
