@@ -1,5 +1,5 @@
 
-console.log("HEY YOU CURIOUS DETECTIVE, AS YOU ARE LOOKING UNDER THE HOOD WHY DONT YOU DROP ME AN EMAIL SO WE CAN HAVE A CHAT ;)")
+console.log("HEY YOU CURIOUS MONKEY :), AS YOU ARE LOOKING UNDER THE HOOD WHY DONT YOU DROP ME AN EMAIL SO WE CAN HAVE A CHAT ;)")
 
 // Smooth scrolling for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define video sources for each icon
     const videoSources = {
-        '2048.png': '2048.mp4',
+        '2048.png': '2048.webm',
         'BYV.png': '22.mp4',
         'DBS.png': 'dbs.mp4',
         'SJ.png': 'SJ1.mp4',
