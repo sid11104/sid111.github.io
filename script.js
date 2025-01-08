@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define video sources for each icon
     const videoSources = {
-        '2048.png': '2048.webm',
+        '2048.png': '2048.mp4',
         'BYV.png': '22.mp4',
         'DBS.png': 'dbs.mp4',
         'SJ.png': 'SJ1.mp4',
